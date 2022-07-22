@@ -1,0 +1,9 @@
+.title {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid green;
+}
+.title .process {
+  border-left: 2px solid green;
+  border-right: 2px solid green;
+}

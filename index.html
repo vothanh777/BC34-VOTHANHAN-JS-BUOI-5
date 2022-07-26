@@ -22,140 +22,104 @@
   <body>
     <div class="container">
       <h2 class="text-center my-4">
-        Bài tập 1: Chương trình Quản lý tuyển sinh
+        Bài tập 1: Tìm số nguyên dương nhỏ nhất sao cho: 1 + 2 + … + n > 10000
       </h2>
-      <div class="title mb-3">
-        <div>
-          <h3 class="text-center">Input</h3>
-          <ul>
-            <li>Điểm chuẩn</li>
-            <li>Điểm 3 môn thi</li>
-            <li>Khu vực</li>
-            <li>Đối tượng ưu tiên</li>
-          </ul>
-        </div>
-        <div class="process">
-          <h3 class="text-center">Process</h3>
-          <ul>
-            <li>
-              Tạo biến diemChuan, diem1 diem2 diem3, khuVuc, uuTien lưu lại giá
-              trị người dùng nhập vào
-            </li>
-            <li>
-              Dựa trên khu vực, đối tượng ưu tiên và tổng điểm 3 môn để tính ra
-              tổng điểm
-            </li>
-            <li>
-              Dựa trên tổng điểm xét xem: nếu >= điểm chuẩn thì đậu, ngược lại
-              thì rớt
-            </li>
-            <li>Tạo biến output lưu lại thông báo cuối cùng</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-center">Output</h3>
-          <ul>
-            <li>Tổng điểm và thông báo đậu hay rớt</li>
-          </ul>
-        </div>
-      </div>
       <div class="d-flex justify-content-center">
         <div class="card w-50">
           <div class="card-header bg-dark text-white text-center">
-            Quản lý tuyển sinh
+            Tìm số nguyên dương
           </div>
-          <div class="card-body">
-            <div class="form-group">
-              <input id="diemChuan" type="number" placeholder="Điểm Chuẩn" />
-            </div>
-            <div class="form-group">
-              <input id="diem1" type="number" placeholder="Điểm môn 1" />
-            </div>
-            <div class="form-group">
-              <input id="diem2" type="number" placeholder="Điểm môn 2" />
-            </div>
-            <div class="form-group">
-              <input id="diem3" type="number" placeholder="Điểm môn 3" />
-            </div>
-            <div class="form-group">
-              <p>Khu vực ưu tiên</p>
-              <select class="form-control" id="khuVuc">
-                <option value="X">Không thuộc khu vực ưu tiên</option>
-                <option value="KV1">Khu vực ưu tiên 1</option>
-                <option value="KV2">Khu vực ưu tiên 2</option>
-                <option value="KV3">Khu vực ưu tiên 3</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <p>Đối tượng ưu tiên</p>
-              <select class="form-control" id="uuTien">
-                <option value="0">Không thuộc đối tượng ưu tiên</option>
-                <option value="1">Đối tượng ưu tiên 1</option>
-                <option value="2">Đối tượng ưu tiên 2</option>
-                <option value="3">Đối tượng ưu tiên 3</option>
-              </select>
-            </div>
-          </div>
+          <div class="card-body"></div>
           <div class="card-footer text-center">
-            <button class="btn btn-secondary" id="btnThongBao">
-              Thông báo kết quả
-            </button>
-            <div class="mt-2" id="thongBaoKetQua"></div>
+            <button class="btn btn-secondary" id="btnTimSo">Tìm</button>
+            <div class="mt-2" id="thongBaoSoNguyen"></div>
           </div>
         </div>
       </div>
     </div>
     <hr />
-    <!-- <!-- <div class="container"> -->
+    <div class="container">
       <h2 class="text-center my-4">
-        Bài tập 2: Chương trình Tính tiền điện
+        Bài tập 2: Viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x +
+        x^2 + x^3 + … + x^n
       </h2>
-      <div class="title mb-3">
-        <div>
-          <h3 class="text-center">Input</h3>
-          <ul>
-            <li>Lượng điện tiêu thụ</li>
-          </ul>
-        </div>
-        <div class="process">
-          <h3 class="text-center">Process</h3>
-          <ul>
-            <li>
-              Tạo biến luongDienTieuThu lưu lại lượng điện tiêu thụ mà người dùng nhập vào
-            </li>
-            <li>
-              Tạo biến output để xuất ra số tiền điện.
-            </li>
-            <li>Xét biểu thức điều kiện if esle để tính toán</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-center">Output</h3>
-          <ul>
-            <li>Số tiền điện phải trả</li>
-          </ul>
-        </div>
-      </div>
       <div class="d-flex justify-content-center">
         <div class="card w-50">
           <div class="card-header bg-dark text-white text-center">
-            Tính tiền điện
+            Tính Tổng
           </div>
           <div class="card-body">
             <div class="form-group">
-              <p>Lượng điện tiêu thụ (kW)</p>
-              <input class="form-control" id="luongDienTieuThu" />
+              <input
+                class="form-control"
+                type="number"
+                id="soX"
+                placeholder="Nhập x"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                id="soN"
+                placeholder="Nhập n"
+              />
             </div>
           </div>
           <div class="card-footer text-center">
-            <button class="btn btn-secondary" id="btnTinhTienDien">
-              Tính tiền điện
+            <button class="btn btn-secondary" id="btnTinhTong">
+              Tính Tổng
             </button>
-            <div class="mt-2" id="thongBaoSoTienDien"></div>
+            <div class="mt-2" id="hienThiKQ"></div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
+
+    <hr />
+    <div class="container">
+      <h2 class="text-center my-4">
+        Bài tập 3: Nhập vào n. Tính giai thừa 1*2*...n
+      </h2>
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <div class="card-header bg-dark text-white text-center">
+            Tính Giai thừa
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="number"
+                id="numberN"
+                placeholder="Nhập n"
+              />
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-secondary" id="btnTinhGiaiThua">
+              Tính giai thừa
+            </button>
+            <div class="mt-2" id="display"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <h2 class="text-center my-4">
+        Bài tập 4: chương trình khi click vào button sẽ in ra 10 thẻ div. Nếu
+        div nào vị trí chẵn thì background màu đỏ và lẻ thì background màu xanh.
+      </h2>
+      <div class="d-flex justify-content-center">
+        <div class="card w-50">
+          <button class="btn btn-secondary" id="btnInTheDiv">
+            In thẻ Divs
+          </button>
+          <div id="inThe"></div>
+        </div>
+      </div>
+    </div>
 
     <script src="./main.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
